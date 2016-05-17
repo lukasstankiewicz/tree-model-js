@@ -221,6 +221,21 @@ module.exports = (function () {
     return keepGoing;
   };
 
+  walkStrategies.preReturn = function depthFirstPreOrderReturn(callback, rCallback, context) {
+    var i, childCount, keepGoing;
+    keepGoing = callback.call(context, this);
+    for (i = 0, childCount = this.children.length; i < childCount; i++) {
+      if (keepGoing === false) {
+        return false;
+      }
+      keepGoing = depthFirstPreOrderReturn.call(this.children[i], callback, rCallback, context);
+    }
+
+    if (rCallback) rCallback.call(context, this);
+
+    return keepGoing;
+  };
+
   walkStrategies.post = function depthFirstPostOrder(callback, context) {
     var i, childCount, keepGoing;
     for (i = 0, childCount = this.children.length; i < childCount; i++) {

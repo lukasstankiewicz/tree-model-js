@@ -1,6 +1,6 @@
 {
-  "name": "tree-model",
-  "version": "1.0.3",
+  "name": "ls-tree-model",
+  "version": "1.0.4",
   "description": "Manipulate and traverse tree-like structures in javascript.",
   "keywords": [
     "tree",
@@ -9,9 +9,9 @@
     "node",
     "requirejs"
   ],
-  "homepage": "http://jnuno.com/tree-model-js",
-  "repository": "https://github.com/joaonuno/tree-model-js",
-  "bugs": "https://github.com/joaonuno/tree-model-js/issues",
+  "homepage": "https://github.com/lukasstankiewicz/tree-model-js",
+  "repository": "https://github.com/lukasstankiewicz/tree-model-js",
+  "bugs": "https://github.com/lukasstankiewicz/tree-model-js/issues",
   "license": "MIT",
   "author": "João Nuno Silva <jnss81@gmail.com> (http://jnuno.com)",
   "main": "TreeModel.js",
